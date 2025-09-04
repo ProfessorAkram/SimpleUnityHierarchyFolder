@@ -15,7 +15,7 @@ methods into smaller, more focused functions.
 using UnityEngine;
 using UnityEditor;
 
-namespace ProfessorAkram.HierarchyFolder
+namespace ProfessorAkram.SimpleUnityHierarchyFolder
 {
     // Static constructor to subscribe to the hierarchy callback
     [InitializeOnLoad]

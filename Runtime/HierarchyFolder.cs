@@ -13,7 +13,7 @@ enabling organization with configurable colors and labels.
 /*******************************************************************/
 using UnityEngine;
 
-namespace ProfessorAkram.HierarchyFolder
+namespace ProfessorAkram.SimpleUnityHierarchyFolder
 {
 
     public class HierarchyFolder : MonoBehaviour

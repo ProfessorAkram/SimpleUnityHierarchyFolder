@@ -13,7 +13,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace ProfessorAkram.HierarchyFolder
+namespace ProfessorAkram.SimpleUnityHierarchyFolder
 {
 
     [CanEditMultipleObjects]

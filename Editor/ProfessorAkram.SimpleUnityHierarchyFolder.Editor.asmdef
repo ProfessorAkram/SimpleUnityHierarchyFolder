@@ -1,0 +1,9 @@
+{
+  "name": "ProfessorAkram.SimpleUnityHierarchyFolder.Editor",
+  "references": [
+    "ProfessorAkram.SimpleUnityHierarchyFolder.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}
