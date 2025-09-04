@@ -1,0 +1,13 @@
+{
+  "name": "com.professorakram.hierarchyfolder",
+  "displayName": "Hierarchy Folder",
+  "version": "1.0.0",
+  "unity": "6.2",
+  "description": "Makes any GameObject act as a folder in the Unity hierarchy.",
+  "keywords": ["hierarchy", "folder", "editor", "organization"],
+  "author": {
+    "name": "Professor Akram Taghavi-Burris",
+    "url": "https://getcreativetoday.com"
+  },
+  "type": "tool"
+}
