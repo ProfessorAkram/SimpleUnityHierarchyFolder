@@ -32,7 +32,7 @@ You can add this package directly into your Unity project using the Unity Packag
 2. In the top menu, go to: **`Window` > `Package Manager`**.
 3. Click the **`+`** button in the top-left corner.
 4. Select **`Add package from Git URL...`**
-5. Paste the following URL:  
+5. Paste the following URL:  https://github.com/ProfessorAkram/SimpleUnityHierarchyFolder.git
 
 ![Add package from Git URL](imgs/unity-install-package-gitURL.png)
 
