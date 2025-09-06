@@ -42,6 +42,8 @@ You can add this package directly into your Unity project using the Unity Packag
 
 1. In the Unity menu, go to **`GameObject` > `Create Hierarchy Folder`**.
    - Or right click in the **Hierarchy Window** and choose `Create Hierarchy Folder` from the context menu
+
+    <img src="imgs/unity-gameObject-create-hierarchyFolder.png" alt="Create Hierarchy Folder" width="400px">
    
      ![Create Hierarchy Folder](imgs/unity-gameObject-create-hierarchyFolder.png)
    
