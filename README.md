@@ -7,7 +7,7 @@ Hierarchy Folders are empty GameObjects, but with their transform access removed
 
 ## 📖 About
 
-This Unity package was developed by **Professor Akram Taghavi-Burris** for educational purposes under the **MIT License**.
+This Unity package was developed by **[Professor Akram Taghavi-Burris](https://www.linkedin.com/in/akram-taghavi-burris/)** for educational purposes under the **[MIT License](LICENSE)**.
 
 For more information about the use case for this plugin, visit:  
 👉 [https://getcreativetoday.com/](https://getcreativetoday.com/)
@@ -40,6 +40,15 @@ You can add this package directly into your Unity project using the Unity Packag
 
 ## 🚀 Usage
 
-1. In the Unity menu, go to **GameObject → Create Hierarchy Folder**.
+1. In the Unity menu, go to **`GameObject` > `Create Hierarchy Folder`**.
+   - Or right click in the **Hierarchy Window** and choose `Create Hierarchy Folder` from the context menu
+     ![Create Hierarchy Folder](imgs/unity-gameObject-create-hierarchyFolder.png)
 2. A new **folder** object will appear in your hierarchy.
 3. In the inspector set the name and *text* color of the folder
+   - Choose the text color from the drop-down list of color.
+     ![Hierarchy folder properties in Inspector](imgs/unity-hierarchyFolder-inspector.png)
+4. In the **Hierarchy Window** the folder object will be displayed as shown in the image below:
+   ![Hierarchy folder in Hierarchy window](imgs/unity-hierarchyFolder-hierarchy.png)
+5. If a **folder** is converted to a **prefab**, the folder icon will update with a prefab icon overlay, as shown below:
+   ![Hierarchy folder prefab](imgs/unity-hierarchyFolder-hierarchy-prefab.png)
+---
