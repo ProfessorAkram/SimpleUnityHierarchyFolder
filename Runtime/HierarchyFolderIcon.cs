@@ -60,7 +60,7 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
             EditorGUI.DrawRect(selectionRect, bgColor);
 
             DrawFolderName(selectionRect, txtColor, thisFolder);
-            DrawFolderIcon(selectionRect);
+            DrawFolderIcon(selectionRect, thisFolder);
 
         }//end OnHierarchyGUI()
 
@@ -190,7 +190,10 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
         /// The rectangle area in the Hierarchy window representing the row
         /// where the icon should be drawn. Used to calculate icon position.
         /// </param>
-        private static void DrawFolderIcon(Rect selectionRect)
+        ///  /// <param name="thisFolder">
+        /// The <see cref="GameObject"/> representing the hierarchy folder that the icon will be drawn for.
+        /// </param>
+        private static void DrawFolderIcon(Rect selectionRect,GameObject thisFolder)
         {
             // Define the size of the icon
             float iconSize = 18f; // Standard icon size
@@ -199,16 +202,46 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
             // Align the iconRect to avoid overlapping with the row above
             Rect iconRect = new Rect(selectionRect.x, verticalCenter, iconSize, iconSize);
 
-            // Load the default Unity folder icon
-            Texture2D icon = EditorGUIUtility.IconContent("Folder Icon").image as Texture2D;
-
-            // Draw the icon
-            if (icon != null)
+            // Get the default Unity folder icon
+            Texture2D folderIcon = EditorGUIUtility.IconContent("Folder Icon").image as Texture2D;
+            
+            // Draw the folder icon
+            if (folderIcon != null)
             {
-                GUI.Label(iconRect, icon);
+                GUI.Label(iconRect, folderIcon);
             }//end if (icon != null)
 
+            //Check if folder is also a prefab
+            if (PrefabUtility.IsPartOfPrefabInstance(thisFolder))
+            {
+                DrawPrefabOverlay(selectionRect);
+                
+            }//end if(PrefabUtility)
+
         }//end DrawFolderIcon()
+
+        
+        /// <summary>
+        /// Draws a small prefab icon overlay within the hierarchy item area.  
+        /// Used to visually indicate that a "folder" GameObject is also a prefab instance.
+        /// </summary>
+        /// <param name="selectionRect">
+        /// The rectangle representing the hierarchy item’s drawing bounds,  
+        /// used to calculate where to position the prefab overlay icon.
+        /// </param>        
+        private static void DrawPrefabOverlay(Rect selectionRect)
+        {
+            //Calculate size of the icon rectangle
+            Rect prefabRect = new Rect(selectionRect.x + 8, selectionRect.y + 8, 8, 8);
+            
+            // Get the default Unity prefab icon 
+            Texture2D  prefabIcon = EditorGUIUtility.IconContent("Prefab Icon").image as Texture2D;
+            
+            // Draw the prefab icon overlay
+            GUI.DrawTexture(prefabRect, prefabIcon);
+            
+        }//end DrawPrefabOverlay
+        
 
     }//end HierarchyFolderIcon class
 
