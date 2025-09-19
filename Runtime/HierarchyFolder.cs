@@ -8,7 +8,7 @@ enabling organization with configurable colors and labels.
 * REVISION HISTORY:
 * Date [YYYY/MM/DD] | Author         | Comments
 * ---------------------------------------------------------------------------
-* 2025/09/03        | Professor Akram | Created script and implmented color selection
+* 2025/09/03        | Professor Akram | Created script and implemented color selection
 *
 /*******************************************************************/
 using UnityEngine;
@@ -33,33 +33,36 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
             Turquoise,
             Green,
             Olive,
-            Brown
+            Brown,
+            Silver,
+            Gold
         }
 
         // Array of color values to map to ColorName enum
         private static readonly Color[] colorValues = new Color[]
         {
-            new Color(0.9f, 0.8f, 0.2f),   // Bright Yellow
-            new Color(1.0f, 0.5f, 0.1f),   // Vivid Orange
-            new Color(0.9f, 0.2f, 0.2f),   // Strong Red
-            new Color(1.0f, 0.5f, 0.6f),   // Vibrant Pink
-            new Color(0.8f, 0.3f, 0.8f),   // Vivid Magenta
-            new Color(0.6f, 0.4f, 0.9f),   // Bright Purple
-            new Color(0.3f, 0.6f, 1.0f),   // Vibrant Blue
-            new Color(0.2f, 0.9f, 0.9f),   // Bright Cyan
-            new Color(0.2f, 0.8f, 0.7f),   // Vibrant Turquoise
-            new Color(0.3f, 0.8f, 0.3f),   // Bright Green
-            new Color(0.5f, 0.6f, 0.2f),    // Olive 
-            new Color(0.6f, 0.4f, 0.2f)   // Brown 
+            new Color(0.90f, 0.80f, 0.20f),   // Bright Yellow
+            new Color(1.00f, 0.50f, 0.10f),   // Vivid Orange
+            new Color(0.90f, 0.20f, 0.20f),   // Strong Red
+            new Color(1.00f, 0.50f, 0.60f),   // Vibrant Pink
+            new Color(0.80f, 0.30f, 0.80f),   // Vivid Magenta
+            new Color(0.60f, 0.40f, 0.90f),   // Bright Purple
+            new Color(0.25f, 0.70f, 1.00f),   // Vibrant Blue
+            new Color(0.20f, 0.90f, 0.90f),   // Bright Cyan
+            new Color(0.20f, 0.80f, 0.70f),   // Vibrant Turquoise
+            new Color(0.30f, 0.80f, 0.30f),   // Bright Green
+            new Color(0.50f, 0.60f, 0.20f),   // Olive 
+            new Color(0.60f, 0.40f, 0.20f),   // Brown
+            new Color(0.75f, 0.75f, 0.75f),   // Silver 
+            new Color(0.70f, 0.55f, 0.10f)    // Gold 
         };
-
 
 
 
         [Tooltip("The text color for the folder game object")]
         public ColorName folderColor = ColorName.Yellow;
 
-        // Returns the a color value maping the folderColor enum to it's correpsonding color value
+        // Returns a color value mapping the folderColor enum to its corresponding color value
         public Color GetColor()
         {
             return colorValues[(int)folderColor];
@@ -74,4 +77,4 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
 
     }//end HierarchyFolder()
 
-}//end name space
+}//end namespace
