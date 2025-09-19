@@ -93,7 +93,7 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
 
 
         /// <summary>
-        ///  Method to determine the background color (approximation) the hierarchy window based on skin
+        ///  Method to determine the background color (approximation) of the hierarchy window based on skin
         /// </summary>
         /// <param name="state">The current state of the row (Selected, Hovered, Even, or Odd).</param>
         private static Color GetHierarchyRowBackground(RowState state)
@@ -231,7 +231,7 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
         /// </param>        
         private static void DrawPrefabOverlay(Rect selectionRect)
         {
-            //Calculate size of the icon rectangle
+            //Calculate the size of the icon rectangle
             Rect prefabRect = new Rect(selectionRect.x + 8, selectionRect.y + 8, 8, 8);
             
             // Get the default Unity prefab icon 
