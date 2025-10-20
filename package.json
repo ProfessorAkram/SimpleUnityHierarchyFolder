@@ -1,7 +1,7 @@
 {
   "name": "com.professorakram.simpleunityhierarchyfolder",
   "displayName": "Hierarchy Folder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "6.2",
   "description": "Enables the creation of dedicated folder objects in the Unity hierarchy for cleaner, more organized scenes.",
   "keywords": [
