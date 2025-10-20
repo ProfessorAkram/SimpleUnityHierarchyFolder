@@ -10,13 +10,18 @@
 * 2025/09/03        | Professor Akram | Created script and OnHierarchyGUI.
 * 2025/09/04        | Professor Akram | Refactored script for optimization by breaking 
 methods into smaller, more focused functions.
+* 2025/10/20        | Professor Akram | Fix build issue caused by InitializeOnLoad in editor scripts.
 *
 /*******************************************************************/
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
+#endif
 
 namespace ProfessorAkram.SimpleUnityHierarchyFolder
 {
+#if UNITY_EDITOR
+
     // Static constructor to subscribe to the hierarchy callback
     [InitializeOnLoad]
     public static class HierarchyFolderIcon
@@ -244,5 +249,7 @@ namespace ProfessorAkram.SimpleUnityHierarchyFolder
         
 
     }//end HierarchyFolderIcon class
+    
+#endif
 
 }//end Namespace
