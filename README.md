@@ -60,3 +60,30 @@ You can add this package directly to your Unity project using the Unity Package 
    <img src="imgs/unity-hierarchyFolder-hierarchy-prefab.png" alt="Hierarchy folder prefab" width="600">
 
 ---
+## 📂 Scene Hierarchy Color Scheme
+
+The Hierarchy Folders plugin can be used in any way you choose. Colors can be aesthetic, arbitrary, or tailored to your personal workflow.
+
+That said, I prefer to use color intentionally, assigning each color a specific architectural meaning. The goal is to visually communicate object responsibility at a glance:
+-  What controls the game?
+-  What exists physically in the world?
+-  What does the player interact with?
+-  What is temporary or should not be in the build?
+
+When used consistently, the hierarchy becomes a visual map of the game’s structure, not just a list of GameObjects. You should be able to open a scene and quickly understand its organization before inspecting a single component.
+
+The following color scheme reflects that philosophy:
+
+| Category       | Color   | Meaning                                                                                     |
+| -------------- | ------- | ------------------------------------------------------------------------------------------- |
+| Testing / Temp | Red     | Temporary objects, prototypes, or items that must be reviewed or removed before final build |
+| Actors         | Orange  | Player and NPC characters                                                                   |
+| Interactables  | Magenta | Player-triggered objects                                                                    |
+| Lights         | Yellow  | All lighting objects                                                                        |
+| Environment    | Green   | Static world geometry and terrain                                                           |
+| Cameras        | Cyan    | Viewing and camera systems                                                                  |
+| UI             | Blue    | Interface and canvas roots                                                                  |
+| Audio (Scene)  | Purple  | Scene-based audio emitters                                                                  |
+| Managers       | Silver  | Invisible system controllers (GameManager, InputManager, etc.)                              |
+
+---
