@@ -83,7 +83,7 @@ The following color scheme reflects that philosophy:
 | Environment    | Green   | Static world geometry and terrain                                                           |
 | Cameras        | Cyan    | Viewing and camera systems                                                                  |
 | UI             | Blue    | Interface and canvas roots                                                                  |
-| Audio (Scene)  | Purple  | Scene-based audio emitters                                                                  |
+| Audio          | Purple  | Scene-based audio emitters                                                                  |
 | Managers       | Silver  | Invisible system controllers (GameManager, InputManager, etc.)                              |
 
 ---
