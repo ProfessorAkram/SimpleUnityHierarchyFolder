@@ -60,7 +60,7 @@ You can add this package directly to your Unity project using the Unity Package 
    <img src="imgs/unity-hierarchyFolder-hierarchy-prefab.png" alt="Hierarchy folder prefab" width="600">
 
 ---
-## 📂 Scene Hierarchy Color Scheme
+## 🎨 Scene Hierarchy Color Scheme
 
 The Hierarchy Folders plugin can be used in any way you choose. Colors can be aesthetic, arbitrary, or tailored to your personal workflow.
 
