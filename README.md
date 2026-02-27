@@ -78,11 +78,11 @@ The following color scheme reflects that philosophy:
 | -------------- | ------- | ------------------------------------------------------------------------------------------- |
 | Testing / Temp | Red     | Temporary objects, prototypes, or items that must be reviewed or removed before final build |
 | Actors         | Orange  | Player and NPC characters                                                                   |
-| Interactables  | Magenta | Player-triggered objects                                                                    |
-| Lights         | Yellow  | All lighting objects                                                                        |
+| Interactables  | Pink    | Player-triggered objects                                                                    |
 | Environment    | Green   | Static world geometry and terrain                                                           |
-| Cameras        | Cyan    | Viewing and camera systems                                                                  |
+| Lights         | Yellow  | All lighting objects                                                                        |
 | UI             | Blue    | Interface and canvas roots                                                                  |
+| Cameras        | Cyan    | Viewing and camera systems                                                                  |
 | Audio          | Purple  | Scene-based audio emitters                                                                  |
 | Managers       | Silver  | Invisible system controllers (GameManager, InputManager, etc.)                              |
 
